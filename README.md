@@ -1,2 +1,4 @@
 # technopolis-autotests
-Homework for university project. The point of the project is to study autotest on the base of social network OK.
+Репозиторий содержит в себе тесты для социальной сети OK.ru.
+
+* LoginTest - тест для проверки входа на страницу пользователя через ввод логина и пароля.
