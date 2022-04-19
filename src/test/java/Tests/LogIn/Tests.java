@@ -21,7 +21,7 @@ public class Tests {
 
     @BeforeAll
     static void init(){
-        user = new User("Надя Николаева", "89218824786", "raweryU78");
+        user = new User("Надя Николаева", "login", "password");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://ok.ru/");
@@ -33,9 +33,4 @@ public class Tests {
         DefaultPage page = new LoginPage().doLogin(user);
         assertEquals(page.getName(), user.getFullName(), "Access denied");
     }
-
-    /*@AfterAll
-    public void stop() {
-        driver.quit();
-    }*/
 }
